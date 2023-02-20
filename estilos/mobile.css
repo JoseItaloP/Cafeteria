@@ -1,0 +1,364 @@
+@charset "UTF-8";
+
+/* MOBILE FRIST */
+
+*{
+    margin: 0px;
+}
+
+body{
+    background-color: #FDCA00;
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+}
+
+@font-face {
+    font-family: 'Lilita One';
+    src: url(../fonts/LilitaOne-Regular.ttf) format(truetype);
+}
+@font-face {
+    font-family: 'quicksand';
+    src: url(../fonts/Quicksand_Bold.otf) format(opentype);
+}
+@font-face {
+    font-family: 'marketing';
+    src: url(../fonts/FredokaOne-Regular.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: 'rubik';
+    src: url(../fonts/Rubik-Bold.ttf);
+}
+
+/*
+TABELA DE CORES
+    1C1C1C - tom escuro 1
+	111111 - tom escuro 2, mais forte
+	FFFED5 - branco
+	FEE402 - amarelo 1
+	FDCA00 - amarelo 2, mais forte
+*/
+
+/*
+    Fonts
+    font-family: 'Rubik', sans-serif; - texto
+    font-family: 'Fredoka One', cursive; - sub-Titulos
+*/
+
+
+header{
+    height: 75vh;
+    text-align: center;
+    color: #FDCA00;
+
+    background: #1C1C1C url(../Imagens/Capa.jpg) no-repeat;
+    background-size: auto;
+    background-position: center center;
+    background-attachment: fixed;
+    
+}
+
+section > h1{
+    padding-top: 15px;
+    font-size: 6em;
+    font-family: 'Lilita One';
+}
+
+section#cabeça>p{
+    color: white;
+    text-shadow: 0px 0px 1px black;
+    font-size: 1.2em;
+    font-family:'Rubik', sans-serif;
+}
+
+header > section#cabeça>p>strong{
+    color:#FDCA00;
+}
+
+section#cabeça{
+    background: linear-gradient(to bottom, #1C1C1C, #fdca0000);
+    height: 45vh;
+    width: 100vw;
+}
+
+main{
+    background-color: #1C1C1C;
+    color: #FDCA00;
+}
+
+main > section.cafe, section#board{
+    padding: 10px;
+}
+
+section.cafe > h2{
+    font-size: 2em;
+    font-family: 'marketing';
+}
+
+section.destaque{
+    background-color: #111111;
+}
+
+section.cafe > h3{
+    font-size: 1.5em;
+    text-indent: 40px;
+    color: #FEE402;
+    font-family: 'Fredoka One', cursive;
+}
+
+section.cafe > ul{
+    text-indent: 80px;
+    color: white;
+    list-style-position: inside;
+    line-height: 1.5em;
+    font-family: 'quicksand';
+}
+
+section#board > h3{
+    font-size: 1.5em;
+    text-align: left;
+    text-indent: 40px;
+    font-family: 'Fredoka One', cursive;
+}
+
+section#board > ul{
+    text-indent: 80px;
+    line-height: 1.5em;
+    color: white;
+    list-style-position: inside;
+    font-family: 'quicksand';
+}
+
+
+div.image{
+    width: 100vw;
+    height:350px;
+}
+
+div.paralax{
+    box-shadow: 0px 0px 75px 20px rgba(0, 0, 0, 0.407) inset;
+}
+
+div.acompanhamento{
+    position: cover;
+    background: #FEE402 url(../Imagens/Acompanhamentos.jpg);
+    background-attachment: fixed;
+    background-position: center bottom;
+}
+
+div#cafe{
+    background: #FEE402 url(../Imagens/Fundo-Passagem.jpg);
+    width: 100vw;
+    height: 500px;
+}
+
+div#board{
+    background: #FEE402 url(../Imagens/Board.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+section#ipedido{
+    background: url(../Imagens/peidos.jpg);
+    background-size: cover;
+    position: relative;
+    display: inline-block;
+    height: 500px;
+
+
+    box-shadow: 0px 0px 15px 5px black inset;
+}
+
+
+
+section#pedido > h2{
+    background-color:#111111 ;
+    width: 100vw;
+    height: 24vh;
+
+    text-align: center;
+    font-size: 2em;
+    font-family: 'rubik';
+    line-height: 1.5em;
+}
+
+section#pedido > h2>strong{
+    color:white;
+}
+
+aside{
+    color: #111111;
+    background-color: #FDCA00;
+    font-family: 'rubik';
+}
+
+aside>h3{
+    font-size: 1em;
+}
+
+aside>h4{
+    font-size: 0.7em;
+    text-align: right;
+    padding-right: 20px;
+}
+
+article{
+    background-color: #111111;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label{
+    text-indent: 10px;
+}
+
+div.form{
+    margin-bottom: 10px;
+}
+
+div >label{
+    font-size: 1.8em;
+    font-family: 'Fredoka One', cursive;;
+}
+
+div#pessoas > input {
+    all: unset;
+
+    border: 1px solid black;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+
+    background-color: white;
+}
+
+div#pessoas > span {
+    font-size: 1.3em;
+}
+
+div#pessoas > input:checked{
+    background-color: #FDCA00;
+}
+
+div#pessoas > input:hover{
+    background-color: #FEE402;
+}
+
+div#bebida >select{
+    background-color: #1C1C1C;
+    border: 1px solid #FDCA00;
+    color: white;
+    height: 30px;
+    width: 225px;
+    text-align: center;
+}
+
+div#acompanhamento > select{
+    background-color: #1C1C1C;
+    border: 1px solid #FDCA00;
+    color: white;
+    height: 30px;
+    width: 225px;
+    text-align: center;
+}
+
+div#boardgame > select{
+    background-color: #1C1C1C;
+    border: 1px solid #FDCA00;
+    color: white;
+    height: 30px;
+    width: 225px;
+    text-align: center;
+}
+
+input#inome{
+    margin-top: 25px;
+
+    text-align: center;
+    font-size: 1.4em;
+    font-family: 'Fredoka One', cursive;
+
+    background-color: #FDCA00;
+    border: 5px solid #1C1C1C;
+    color: #111111;
+    border-radius: 5px;
+    height: 45px;
+    width: 350px;
+}
+
+div#date > input{
+    background-color: #1C1C1C;
+    border: 1px solid #FDCA00;
+    color: white;
+    height: 30px;
+    width: 225px;
+    text-align: center;
+}
+
+div#time > input{
+    background-color: #1C1C1C;
+    border: 1px solid #FDCA00;
+    color: white;
+    height: 30px;
+    width: 225px;
+    text-align: center;
+}
+
+
+div#caixa > textarea{
+    margin-top: 10px;
+
+    background-color: #1C1C1C;
+    border: 1px solid #FDCA00;
+    color: white;
+    height: 250px;
+    width: 350px;
+    text-align: center;
+
+    font-size: 1.3em;
+}
+
+section#ipedido > input{
+    width: 115px;
+    height: 60px;
+
+    border: 1px solid #FDCA00;
+    background-color: #111111;
+    color: white;
+    border-radius: 5px;
+}
+
+section#ipedido > input:hover{
+    border: 1px solid #111111;
+    background-color: #FDCA00;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+footer {
+    color: #1C1C1C;
+    background-color: #FEE402;
+    height: 75px;
+    font-family: 'rubik';
+    text-align: center;
+    padding-top: 10px;
+}
+
+footer > a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #1C1C1C;
+    color: #FEE402;
+    border: 1px solid #1C1C1C;
+    margin: 2px;
+
+    border-radius: 5px;
+
+    width: 100px;
+    height: 25px;
+}
+

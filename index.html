@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/mobile.css">
+    <link rel="stylesheet" href="estilos/telas.css">
+    <title>Café na Mesa</title>
+</head>
+<body>
+    <header>
+        <section id="cabeça">
+            <h1>Café na Mesa</h1>
+            <p>Seu lugar para jogar <strong><em>BoardGames</em></strong> e tomar aquele cafézinho</p>
+        </section>
+    </header>
+    <main>
+        <section class="cafe">
+            <h2>Nós temos varios tipos de cafés, bebidas e acompanhamentos</h2>
+            <h3>Cafés e bebidas:</h3>
+            <ul >
+                <li type="none">Café preto</li>
+                <li type="none">Descafeinado</li>
+                <li type="none">Café ao leite</li>
+                <li type="none">Café gelado</li>
+                <li type="none">Capuccino</li>
+                <li type="none">Chá</li>
+            </ul>
+            </section>
+        <div id="cafe" class="image"></div>
+            <section class="cafe destaque">
+                <h3>Acompanhamentos</h3>
+                <ul>
+                    <li type="none">Sanduiche</li>
+                    <li type="none">Sanduiche Natural</li>
+                    <li type="none">Salgados</li>
+                    <li type="none">Tapioca</li>
+                    <li type="none">Bolos</li>
+                </ul>
+        </section>
+        <div  class="paralax image acompanhamento"></div>
+        <section id="board">
+            <h3>Possuimos uma vasta gama de BoardGames</h3>
+            <ul>
+                <li type="none">Eldritch horror</li>
+                <li type="none">Root</li>
+                <li type="none">Catan</li>
+                <li type="none">Uno</li>
+                <li type="none">Survive</li>
+                <li type="none">King Of New York</li>
+                <li type="none">Cartógrafos</li>
+                <li type="none">7 Wonders</li>
+                <li type="none">Telma</li>
+            </ul>
+        </section>
+        <section id="pedido">
+
+            <h2>Faça seu pedido, reserve uma mesa e marque um dia. <br> <strong> Venha jogar conosco!</strong> </h2>
+                
+            <aside>
+                <h3>Fales o numero de pessoas e as porções pro grupo!</h3>
+                <h4><em>Se possuir um adicional ou uma distribuição, fale na caixa abaixo os detalhes</em></h4>
+            </aside>
+
+            <article>
+                <form action="" method="post">
+                    <div id="pessoas" class="form">
+                        <label for="ipessoas">Numero de pessoas </label> <br>
+                        <input type="checkbox" name="2" id="ipessoas"> <span>1-2 Pessoas</span> <br>
+                        <input type="checkbox" name="3-4" id="ipessoas"> <span>3-4 Pessoas</span> <br>
+                        <input type="checkbox" name="5-6" id="ipessoas"> <span>5-6 Pessoas</span> <br>
+                    </div>
+
+                        <div id="bebida" class="form">
+                            <label for="ibebida">Bebidas </label> <br>
+                            
+                            <select name="bebidas" id="ibebida">
+                            <option value=""></option>
+                            <optgroup label="Cafés">
+                                <option value="Cafe preto">Café preto</option>
+                                <option value="Descafeinado">Descafeinado</option>
+                                <option value="cafe ao leita">Café ao Leite</option>
+                                <option value="cafe gelado">Café Gelado</option>
+                                <option value="capuccino">Capuccino</option>
+                            </optgroup>
+                             <optgroup label="Chás">
+                                <option value="Chá Branco">Chá Branco</option>
+                                <option value="Chá de Boldo">Chá de boldo</option>
+                                <option value="Chá de Camomila">Chá de Camomia</option>
+                                <option value="Chá de Erva-doce">Chá de Erva-doce</option>
+                            </optgroup>
+                            <optgroup label="Sucos">
+                                <option value="laranja">Suco de Laranja</option>
+                                <option value="uva">Suco de Uva</option>
+                                <option value="hortelã e abacaxi">Suco de Hortelã com abacaxi</option>
+                            </optgroup>
+                          </select>
+                        </div>
+
+                    <div id="acompanhamento" class="form">
+                        <label for="iacompanhamento">Acompanhamentos</label> <br>
+                        
+                        <select name="acompanhamento" id="iacompanhamento">
+                            <option value=""></option>
+                            <optgroup label="Sanduiche">
+                                <option value="natural">Sanduiche Natural </option>
+                                <option value="queijo e presunto">Sanduiche e Queijo e Presunto </option>
+                                <option value="pernil">Sanduiche de Pernil</option>
+                                <option value="3 camada">Sanduiche de 3 camadas da casa</option>
+                            </optgroup>
+                            <optgroup label="Salgados">
+                                <option value="coxinha">Coxinha</option>
+                                <option value="pastel">Pastel</option>
+                                <option value="enroladinho">Enroladinho</option>
+                                <option value="mistura">Misturão</option>
+                            </optgroup>
+                            <optgroup label="Bolos">
+                                <option value="chocolate">Fatia de Bolo de Chocolate</option>
+                                <option value="rolo">Fatia de Bolo de rolo</option>
+                                <option value="limao">Fatia de bolo de Limão</option>
+                            </optgroup>
+                            <optgroup label="Tapiocas">
+                                <option value="queijo">Tapioca de Quiejo</option>
+                                <option value="queijo e coco">Tapioca e Queijo e Coco</option>
+                                <option value="doce">Tapioca Doce</option>
+                                <option value="frango">Tapioca de Frango</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                        <div id="boardgame" class="form">
+                            <label for="iboard">BoardGames</label>
+                            <br>
+                            <select name="board" id="iboard">
+                                <option value=""></option>
+                                <option value="Eldritch">Elritch Horror</option>
+                                <option value="root">Root</option>
+                                <option value="Catan">Catan</option>
+                                <option value="uno">Uno</option>
+                                <option value="survive">Survive</option>
+                                <option value="king">King Of New York</option>
+                                <option value="cartografo">Cartógrafos</option>
+                                <option value="7 wonders">7 Wonders</option>
+                                <option value="telma">Telma</option>
+                            </select>
+                        </div>
+                </form>
+                
+                    <form action="" method="post">
+                       
+                            <div class="form">
+                                <input type="text" name="nome" id="inome" placeholder="Nome da reserva" required>
+                                 <br>
+                            </div>
+                                <div class="form">
+                                    <label for="idate">Nos diga a data </label>
+                                    <br>
+                            
+                                <div id="date" class="form">
+                                    <input type="date" name="data"
+                                    id="idata" required>
+                                     <br>
+                                </div>
+                            
+                                    <label for="ihora">Nos diga o horario </label>
+                                    <br>
+                            
+                                <div id="time" class="form">
+                                    <input type="time" name="hora" id="ihora" required>
+                                    <br>
+                                </div>
+                                <section id="ipedido" class="image">
+                                <div id="caixa">
+                                    <textarea name="descrição" id="idescrição" cols="50" rows="10" placeholder="A alguma mudança nos pedidos ou reservas? Nos fale aqui!"></textarea>
+                                    <br>          
+                                </div>
+                                <input type="submit" value="Enviar">
+                            </div>
+                        </section>
+                    </form>
+                </article>
+
+        </section>
+    </main>
+    <footer>
+        <h3>Contatos</h3>
+            <a href="#">Endereço</a> 
+            <a href="#">Instagram</a> 
+            +55 9 5555-5555 
+    </footer>
+</body>
+</html>
